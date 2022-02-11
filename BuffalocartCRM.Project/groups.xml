@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test"/>
+   <parameter name="browser" value="chrome"></parameter>
+  <test name="groupingtest">
+  <groups>
+  <run>
+  <include name="sanity"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="BuffalocartCRM.Project.Scripts.EventTest"/>
+      <class name="BuffalocartCRM.Project.Scripts.TestBase"/>
+      <class name="BuffalocartCRM.Project.Scripts.DashboardTest"/>
+      <class name="BuffalocartCRM.Project.Scripts.TaskTest"/>
+      <class name="BuffalocartCRM.Pages.DashBoardPage"/>
+      <class name="BuffalocartCRM.Project.Scripts.LoginTest"/>
+      <class name="BuffalocartCRM.Project.Scripts.SanityTest"/>
+      <class name="BuffalocartCRM.Project.Scripts.ExpenseTest"/>
+      <class name="BuffalocartCRM.Project.Scripts.RegressionTest"/>
+      <class name="BuffalocartCRM.Project.Scripts.NotesTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
